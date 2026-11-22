@@ -73,6 +73,8 @@ git push -u origin main
 
 Aplikasi ini dapat diakses secara publik melalui internet menggunakan layanan gratis **Streamlit Community Cloud**:
 
+Pastikan kode, `requirements.txt`, file model (`.pkl`), dan file metadata Iris sudah di-push ke repository GitHub yang akan digunakan.
+
 ### Langkah-Langkah Deploy:
 1. Kunjungi **[share.streamlit.io](https://share.streamlit.io/)** dan login menggunakan akun GitHub Anda (**@pompymandislian**).
 2. Klik tombol **"Create app"** atau **"New app"**.
@@ -84,6 +86,8 @@ Aplikasi ini dapat diakses secara publik melalui internet menggunakan layanan gr
 4. Klik tombol **"Deploy!"**.
 5. Tunggu 1–2 menit saat Streamlit menginstall dependensi dari `requirements.txt`.
 6. 🎉 **Aplikasi Anda sekarang sudah live di internet dan siap dibagikan!**
+
+Untuk men-deploy aplikasi Streamlit Basics, buat aplikasi baru dengan **Main file path** `sesi_6_streamlit_basics.py`. Lihat juga [panduan deployment resmi Streamlit](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy).
 
 ---
 
