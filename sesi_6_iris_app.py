@@ -149,8 +149,8 @@ else:
 st.sidebar.info(model_info)
 
 st.sidebar.markdown("---")
-st.sidebar.markdown("**Fullstack Bangalore**")
-st.sidebar.markdown("📷 @fullstackbangalore")
+#st.sidebar.markdown("**Fullstack Bangalore**")
+#st.sidebar.markdown("📷 @fullstackbangalore")
 
 # ============================================================================
 # INPUT FORM
