@@ -45,7 +45,35 @@ Berikut adalah langkah-langkah lengkap dari awal yang digunakan untuk membuat re
 5. Klik tombol hijau **"Create repository"**.
 
 ### 2. Jalankan Perintah Git di Terminal Komputer Lokal
-Buka Terminal di dalam folder proyek Anda, lalu jalankan perintah berikut secara berurutan:
+Buka Terminal di dalam folder proyek. Jika ini pertama kali menghubungkan Git ke GitHub, login dahulu. Cara paling mudah adalah memakai GitHub CLI, yang menghubungkan Git ke akun GitHub dan membuka browser untuk autentikasi.
+
+Di macOS dengan Homebrew, pasang GitHub CLI:
+
+```bash
+brew install gh
+```
+
+Jika tidak memakai Homebrew atau menggunakan Windows/Linux, ikuti [panduan instalasi GitHub CLI resmi](https://github.com/cli/cli#installation). Setelah terpasang, jalankan:
+
+```bash
+gh auth login
+```
+
+Pilih **GitHub.com** → **HTTPS** → **Login with a web browser**, lalu ikuti instruksi di terminal dan browser sampai selesai. Cek bahwa login berhasil:
+
+```bash
+gh auth status
+gh auth setup-git
+```
+
+`gh auth setup-git` mengatur Git agar memakai login GitHub CLI saat menjalankan `push` dan `pull`. Login ini berbeda dari identitas commit di bawah. Atur nama dan email commit satu kali per komputer (ganti email contoh dengan email akun GitHub Anda):
+
+```bash
+git config --global user.name "Nama Anda"
+git config --global user.email "email-anda@example.com"
+```
+
+Setelah login dan mengatur identitas commit, jalankan perintah Git berikut secara berurutan:
 
 ```bash
 # 1. Inisialisasi git di folder lokal
